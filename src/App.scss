@@ -19,13 +19,121 @@
   justify-content: space-between;
   align-items: center;
   align-self: center;
-  margin: 50px
+  margin: 50px;
+  justify-self: center;
+  padding: 0;
+  max-width: 1088px;
+  width: calc(100% - 64px);
+  height: calc(100% - 64px);
+  max-height: 648px
 }
 
 .summ-container {
   flex-basis: 30%;
+  background-color: #f3f3f3;
+  height: 100%;
+  padding: 40px 32px;
+  h1.ui.header {
+    border-bottom: 1px solid rgba(33, 34, 64, 0.16);
+    font-size: 18px;
+    padding-bottom: 16px;
+  }
+}
+
+.product-desp {
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+}
+
+.ui.image.product-image {
+  border-radius: 5px;
+  border: 1px solid #cacad1;
+  margin-right: 16px;
 }
 
 .product-container {
   flex-basis: 70%;
+  padding: 40px 32px 40px 56px;
+  height: 100%;
+  h1.ui.header {
+    border-bottom: 1px solid rgba(33, 34, 64, 0.16);
+    font-size: 18px;
+    padding-bottom: 16px;
+  }
+}
+
+.ui.header.product-name {
+  color: #7350ff;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.product-code {
+  font-size: 12px;
+  color: #a6a7b3;
+  letter-spacing: 0.13px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.ui.basic.button.calc-button {
+  box-shadow: none;
+  padding: 2px;
+  width: 18px;
+}
+
+.ui.basic.button.calc-button.sub {
+  margin-left: -15px;
+}
+
+.ui.icon.button>.icon, .ui.icon.buttons .button>.icon {
+  color: #7350ff;
+}
+
+.ui.input.product-quantity{
+  width: 40px;
+  border: 1px solid #dbdbe0;
+  height: 40px;
+  border-radius: 4px;
+  text-align:center;
+  input {
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.ui.table thead th, .ui.table tr td {
+  border: none
+}
+
+.ui.button.checkout-button {
+  width: 100%;
+  border-radius: 4px;
+  background:#7350ff;
+  margin-top: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: white;
+  font-size: 16px;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.ui[class*="very basic"].table thead th.header-title {
+  color:#a6a7b3;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 10px;
+  line-height: 16px;
+}
+
+.ui[class*="very basic"].table:not(.sortable):not(.striped) thead tr:first-child th {
+  padding-top: 20px;
 }

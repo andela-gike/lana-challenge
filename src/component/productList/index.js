@@ -6,7 +6,6 @@ import ProductDetails from './productDetails';
 const ListDisplay = () => {
   const HeaderCell = ['Product details', 'Quantity', 'Price', 'Total'];
   const products = useContext(Context);
-  console.log(products);
   return (
     <div className="product-container">
         <Header as="h1">Shopping cart</Header>
@@ -14,7 +13,7 @@ const ListDisplay = () => {
           <Table.Header>
             <Table.Row>
               {HeaderCell.map((eachCell, index) =>
-              (<Table.HeaderCell key={index}>
+              (<Table.HeaderCell key={index} className="header-title">
                 {eachCell}
               </Table.HeaderCell>)
               )}
@@ -22,7 +21,7 @@ const ListDisplay = () => {
           </Table.Header>
           <TableBody>
             {products.map((produ, index) =>
-              <ProductDetails
+              <ProductDetails key={index}
                 imgUrl={produ.imgUrl}
                 productName={produ.productName}
                 productCode={produ.productCode}
